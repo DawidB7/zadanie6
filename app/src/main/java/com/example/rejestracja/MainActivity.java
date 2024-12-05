@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (Email.isEmpty()) {
                     TVkomunikat.setText("Proszę wprowadzdić adres e-mail");
-                } else if (!Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
+                } else if (!Email.contains("@")) {
                     TVkomunikat.setText("Nieprawidłowy adres e-mail");
                 } else if (Password.isEmpty()) {
                     TVkomunikat.setText("Proszę wprowadzić hasło");
